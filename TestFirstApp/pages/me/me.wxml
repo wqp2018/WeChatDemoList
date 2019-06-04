@@ -1,0 +1,11 @@
+<block wx:if="{{login}}">
+  <button open-type="getUserInfo" bindtap="getUserInfo">登录</button>
+</block>
+<block wx:else>
+  <view class='showDiv'>
+  <view class='imgDiv'>
+  <image class="avatarUrl" src='{{userInfo.avatarUrl}}' />
+  </view>
+  <text>{{userInfo.nickName}}</text>
+  </view>
+</block>

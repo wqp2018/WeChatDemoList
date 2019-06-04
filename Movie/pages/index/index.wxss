@@ -1,0 +1,16 @@
+text{
+  font-size: 11px;
+  color:white
+}
+swiper{
+  height: 200px;
+  text-align: center;
+}
+.content{
+  background: #3A3A3A;
+}
+.hr{
+  height: 2px;
+  background: white;
+  opacity: 0.5
+}

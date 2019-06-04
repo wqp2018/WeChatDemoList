@@ -1,0 +1,38 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/typePage/typePage",
+    "pages/commod/commod",
+    "pages/allcommod/allcommod",
+    "pages/me/me"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "白雾White",
+    "navigationBarTextStyle":"black"
+  },
+  "tabBar":{
+    "list":[
+      {
+        "pagePath":"pages/index/index",
+        "text":"首页",
+        "iconPath":"images/page.png",
+        "selectedIconPath":"images/selectPage.png"
+        
+      },
+      {
+        "pagePath": "pages/allcommod/allcommod",
+        "text": "商品",
+        "iconPath": "images/all.png",
+        "selectedIconPath": "images/selectAll.png"
+      },
+      {
+        "pagePath": "pages/me/me",
+        "text": "我",
+        "iconPath": "images/about.png",
+        "selectedIconPath": "images/selectAbout.png"
+      }
+    ]
+  }
+}

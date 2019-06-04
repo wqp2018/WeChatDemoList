@@ -1,0 +1,26 @@
+.showCommod{
+  display: inline-block;
+  width: 675rpx;
+  margin-left:37.5rpx;
+}
+.showImage{
+  display: inline-block;
+  width: 320rpx;
+  margin-top: 20rpx;
+  margin-right: 15rpx;
+}
+.showImage image{
+  width: 320rpx;
+}
+.showImage text{
+  display: inline-block;
+  width: 320rpx;
+  font-size: 26rpx;
+  white-space:nowrap;
+  overflow:hidden; 
+  text-overflow:ellipsis;
+}
+.showImage .price{
+  font-size: 36rpx;
+  display: inline-block;
+}

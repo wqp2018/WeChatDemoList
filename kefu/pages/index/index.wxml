@@ -1,0 +1,25 @@
+<form report-submit bindsubmit='formSubmit'>
+  <label>
+    地点：
+    <input type='text' name="site" />
+  </label>
+  <label>
+    选择日期：
+   <picker mode="date" name="date" value="{{date}}" start="2015-09-01" end="2099-09-01" bindchange="bindDateChange">
+    <view class="picker">
+      当前选择: {{date}}
+    </view>
+    </picker>
+  </label>
+  <label>
+    商品名称：
+    <input type='text' name="name" />
+  </label>
+  <label>
+    价格：
+    <input type='text' name="price" />
+  </label>
+  <button form-type='submit' >提交</button>
+</form>
+
+<button bindtap='go'>打电话</button>

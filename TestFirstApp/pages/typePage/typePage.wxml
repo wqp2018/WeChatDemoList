@@ -1,0 +1,9 @@
+<view class='showCommod'>
+    <block wx:for="{{imgUrl}}" wx:key="xxx">
+      <view class='showImage' id='{{item.cid}}' catchtap='toCommod'>
+        <image src='{{item.cimage[0]}}' mode='widthFix'/>
+        <text>{{item.cname}}</text>\n
+        <text class='price' style='color:red'>￥{{item.cprice}}</text>
+      </view>
+    </block>
+  </view>

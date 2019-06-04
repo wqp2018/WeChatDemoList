@@ -1,0 +1,13 @@
+<!--index.wxml-->
+<view class='loading'>
+  正在加载
+</view>
+
+<view class="container">
+  <button bindtap='getInfo'>获取</button>
+</view>
+<block wx:for="{{userinfo}}">
+  <text>{{item.commodname}}</text>
+</block>
+
+<image src='https://gd3.alicdn.com/imgextra/i1/3891323578/TB2UNV6g.OWBKNjSZKzXXXfWFXa_!!3891323578.jpg'></image>

@@ -1,0 +1,50 @@
+/**index.wxss**/
+swiper{
+  height: 450rpx;
+  text-align: center;
+}
+.textHead{
+  font-size: 28rpx
+}
+.typeDiv{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding: 15px
+}
+.typyViewShow{
+  display: flex;
+  flex-direction: row;
+  width: 675rpx;
+  margin: auto;
+  justify-content:space-between;
+}
+.toRight{
+  font-weight: bolder;
+  display: flex;  
+}
+.showCommod{
+  display: flex;
+  width: 675rpx;
+  flex-direction: row;
+}
+.showImage{
+  width: 335rpx;
+  margin-top: 20rpx;
+  margin-left: 5rpx;
+}
+.showImage image{
+  width: 330rpx;
+}
+.showImage text{
+  display: inline-block;
+  width: 330rpx;
+  font-size: 26rpx;
+  white-space:nowrap;
+  overflow:hidden; 
+  text-overflow:ellipsis;
+}
+.showImage .price{
+  font-size: 36rpx;
+  display: inline-block;
+}

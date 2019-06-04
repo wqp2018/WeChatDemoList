@@ -1,0 +1,12 @@
+<button open-type='openSetting'>设置</button>
+<button open-type='getUserInfo'>登录</button>
+<button bindtap='kk'>kk</button>
+<button bindtap='jj'>是否授权</button>
+<button open-type='getPhoneNumber'>获取手机号码</button>
+<button bindtap='settingPage'>设置页面</button>
+<button bindtap='sc'>输出</button>
+
+<import src="../template/tt.wxml" />
+<template is="test" data="{{movie}}"></template>
+
+<map id="map" longitude="110.35894" latitude="21.27134" scale="14" show-location style="width: 100%; height: 300px;"></map>

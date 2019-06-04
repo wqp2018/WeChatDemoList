@@ -1,0 +1,15 @@
+.showDiv{
+  width: 750rpx;
+  text-align: center;
+}
+.imgDiv{
+  height: auto;
+  width: 100%;
+}
+.avatarUrl{
+  display: inline-block;
+  height: 300rpx;
+  width: 300rpx;
+  border-radius: 100%;
+  margin: auto;
+}

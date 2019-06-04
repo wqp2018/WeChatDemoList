@@ -1,0 +1,8 @@
+<view class="section">
+  <view class="section__title">多列选择器</view>
+  <picker mode="multiSelector" bindchange="bindMultiPickerChange" bindcolumnchange="bindMultiPickerColumnChange" value="{{index}}" range="{{array}}">
+    <view class="picker">
+      当前选择：{{array[0][index[0]]}},{{array[1][index[1]]}}
+      </view>
+  </picker>
+</view>

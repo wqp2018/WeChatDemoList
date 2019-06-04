@@ -1,0 +1,32 @@
+<view class='content' style="display:flex;flex-direction:column">
+<swiper indicator-dots="{{indicatorDots}}"
+autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+<block wx:for="{{imgUrls}}" wx:key="xxx">
+  <swiper-item >
+    <image src="{{item}}" class="slide-image" mode='aspectFit'/>
+  </swiper-item>
+</block>
+</swiper>
+
+<block wx:for="{{movies}}" wx:key="xxx">
+<view style="display:flex;flex-direction:row;">
+  <view>
+    <image src='{{item.images.large}}' style='height:150px;width:150px;padding:5px'/>
+  </view>
+  
+  <view style='padding:12px'>
+    <text>{{item.text}}</text>
+  </view>
+</view>
+<view class='hr'></view>
+</block>
+
+<view class="body-view">
+    <loading hidden="{{hidden}}">
+        加载中...
+    </loading>
+</view>
+
+
+
+</view>

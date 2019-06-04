@@ -1,0 +1,53 @@
+<swiper indicator-dots="{{indicatorDots}}"
+  autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+  <block wx:for="{{logo}}" wx:key="xxx">
+    <swiper-item>
+      <image src="{{item}}" class="slide-image" mode='widthFix'/>
+    </swiper-item>
+  </block>
+</swiper>
+<view class='typeDiv'>
+  <view class='typyViewShow' catchtap='toSkirtPage'>
+    <view class='textHead'>| 裙子</view>
+    <view class='toRight'>></view>
+  </view>
+  <view class='showCommod'>
+    <block wx:for="{{skirtImg}}" wx:key="xxx">
+      <view class='showImage' id='{{item.cid}}' catchtap='toCommod'>
+        <image src='{{item.cimage[0]}}' mode='widthFix'/>
+        <text>{{item.cname}}</text>\n
+        <text class='price' style='color:red'>￥{{item.cprice}}</text>
+      </view>
+    </block>
+  </view>
+</view>
+<view class='typeDiv'>
+  <view class='typyViewShow' catchtap='toClothPage'>
+    <view class='textHead'>| 上衣</view>
+    <view class='toRight'>></view>
+  </view>
+  <view class='showCommod'>
+    <block wx:for="{{clothImg}}" wx:key="xxx">
+      <view class='showImage' id='{{item.cid}}' catchtap='toCommod'>
+        <image src='{{item.cimage[0]}}' mode='widthFix'/>
+        <text>{{item.cname}}</text>\n
+        <text class='price' style='color:red'>￥{{item.cprice}}</text>
+      </view>
+    </block>
+  </view>
+</view>
+<view class='typeDiv'>
+  <view class='typyViewShow' catchtap='toTxPage'>
+    <view class='textHead'>| T恤</view>
+    <view class='toRight'>></view>
+  </view>
+  <view class='showCommod'>
+    <block wx:for="{{txImg}}" wx:key="xxx">
+      <view class='showImage' id='{{item.cid}}' catchtap='toCommod'>
+        <image src='{{item.cimage[0]}}' mode='widthFix'/>
+        <text>{{item.cname}}</text>\n
+        <text class='price' style='color:red'>￥{{item.cprice}}</text>
+      </view>
+    </block>
+  </view>
+</view>

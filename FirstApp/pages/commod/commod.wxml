@@ -1,0 +1,28 @@
+<swiper indicator-dots="{{indicatorDots}}"
+  autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+  <block wx:for="{{imgUrls.cimage}}" wx:key="xxx">
+    <swiper-item>
+      <image src="{{item}}" class="slide-image" mode='widthFix'/>
+    </swiper-item>
+  </block>
+</swiper>
+<view class="textTitle">
+  <text decode="{{true}}">&ensp;{{imgUrls.cname}}\n</text>
+  <text decode="{{true}}" style='color:red;font-size:38rpx;display:inline-block;padding:20rpx'>&ensp;&ensp;￥{{imgUrls.cprice}}</text>
+</view>
+<view class='line'></view>
+<view class='messageShow'>
+  <text style='display:inline-block;padding:20rpx;font-weight:bold'> | 商品详情</text>
+</view>
+<block wx:for="{{imgUrls.cimage}}" class="imgBlock">
+  <view class='showBigPic'>
+    <image src='{{item}}' mode='widthFix'/>
+  </view>
+</block>
+<view style='background:red;height:80rpx;'></view>
+<view class='bottomShow'>
+  <view class='chatPic'><image src="/images/chat.png" /></view>
+  <view class='chatPic'><image src="/images/car.png" /></view>
+  <view class='chatPeople'>联系客服</view>
+  <view class='buy'>购买商品</view>
+</view>
